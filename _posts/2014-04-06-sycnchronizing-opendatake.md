@@ -27,3 +27,13 @@ The next task is to find a match for each of these schools in OpenStreetMap, and
 
 Decided to try out [OSMLY](http://osmly.com/) for this matching job. OSMLY is designed to make import of data into OpenStreetMap simple. It "microtasks" the import, presenting one feature at a time to merge. Tooks some [code changes to add support for point geometries](https://github.com/aaronlidman/osmly/commit/4c52d2c42536490c03d87045fc97a117b4a56a57) (OSMLY had only support polygons), and [other changes to retain OSM objects, rather than create new ones](https://github.com/mapkibera/osmly/commits/gh-pages). With that, [built a database](https://github.com/mapkibera/osmly/blob/gh-pages/server/build.py) from the OpenDataKE geojson, and fired up the server.
 
+Turns out its a bit of a hunt. The OpenDataKE points for all of the first schools we found were significantly off from OpenStreetMap. And we have excellent confidence in the OSM data, having been collected by GPS data on the ground, and double checked against satellite imagery. So far, we've retained the location in OSM, in OSM, and will share both in the merged data set.
+
+<a href="https://www.flickr.com/photos/mikel_maron/13695837445" title="Screenshot from 2014-04-07 11:45:25 by Mikel Maron, on Flickr"><img src="https://farm8.staticflickr.com/7276/13695837445_401d94f911_c.jpg" width="800" height="426" alt="Screenshot from 2014-04-07 11:45:25"></a>
+
+OSMLY keeps a tally of what's been completed, and any notes/problems on items reviewed so far.
+
+<a href="https://www.flickr.com/photos/mikel_maron/13695836565" title="Screenshot from 2014-04-06 11:00:26 by Mikel Maron, on Flickr"><img src="https://farm4.staticflickr.com/3765/13695836565_9e8170a469_c.jpg" width="800" height="424" alt="Screenshot from 2014-04-06 11:00:26"></a>
+
+Once a match is found, and the official_name recorded in tags, the result is [submitted to OSM](http://www.openstreetmap.org/node/1875796685). You can see [all the schools processed so far in OverPass](http://overpass-turbo.eu/s/2ZM).
+
