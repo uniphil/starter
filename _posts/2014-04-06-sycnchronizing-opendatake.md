@@ -37,3 +37,6 @@ OSMLY keeps a tally of what's been completed, and any notes/problems on items re
 
 Once a match is found, and the official_name recorded in tags, the result is [submitted to OSM](http://www.openstreetmap.org/node/1875796685). You can see [all the schools processed so far in OverPass](http://overpass-turbo.eu/s/2ZM).
 
+So far so good. We'll continue on the process of matching, and then next, write another python script to build a GeoJSON file containing both data sets, based on the matching identifier in OSM.
+
+On the OpenDataKE side, left wondering why the geolocations differ from OSM. The difference does not seem to be in a consistent direction or distance, so projection issues are unlikely. Would be excellent to learn more about the background and methodology of these school data sets. Though collected way back in 2007, I have heard that this was part of USAID project. Anyone with any ideas or connections here, would love to hear more from you.
