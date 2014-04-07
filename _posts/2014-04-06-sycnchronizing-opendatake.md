@@ -2,7 +2,7 @@
 layout: blog
 category: blog
 published: true
-title: Sycnchronizing OpenDataKE
+title: Merging OpenDataKE and OpenStreetMap
 ---
 
 Our project, [Education feedback loops in Nairobi slums](http://www.developmentgateway.org/news/development-gateway-grand-challenges-explorations-winner) has an ambitious goal: "combine citizen-generated data with official government data in a way that allows slum dwellers to access and use this information to make decisions to improve their community." 
